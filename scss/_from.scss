@@ -1,0 +1,212 @@
+/* Say Hello Area */ 
+.say_hello_area{
+    display: block;
+    overflow: hidden;
+    padding-top: 270px;
+    position: relative;
+    
+    .layer_1{
+        position: absolute !important;
+        top: 90px !important;
+        left: 160px !important;
+    }
+    .layer_2{ 
+        position: absolute !important;
+        top: auto!important;
+        bottom: 0;
+        left: 110px !important;
+    }
+    .layer_3{ 
+        position: absolute !important;
+        top: auto!important;
+        right: 100px !important;
+        left: auto !important;
+        bottom: 0;
+    }
+    .hello_tittle{
+        text-align: center;
+        max-width: 760px;
+        margin: 0 auto;
+        h2{
+            font: 500 42px/1 $works;
+            color: #424d6c;
+        }
+        p{
+            font: 400 18px/28px $works;
+            color: rgba(66, 77, 108, 0.702);
+            padding-top: 40px;
+        }
+    }
+    
+    .from_main{  
+        padding: 100px 0 115px;
+        .form-group{
+            margin-bottom: 30px;
+            .form-control, .post_select{
+                box-shadow: none;
+                outline: none; 
+                border: 0; 
+                border-bottom: 1px solid #e3e3e3;
+                background: #fff; 
+                font: 400 16px/55px $works;
+                color: #787676;
+                border-radius: 0;
+                height: auto;
+                padding: 0; 
+                resize: none; 
+                @include placeholder{
+                    color: #787676; 
+                }
+                &:focus{ 
+                    @include placeholder{
+                        color: transparent;
+                    }
+                }
+            }
+            textarea{
+                line-height: 30px !important;
+                height: 210px !important; 
+                position: relative;  
+                padding-top: 30px !important;
+            }
+            .post_select{
+                width: 100%;
+                &:before{
+                    line-height: 60px;
+                    color: #6b6b6b;
+                }
+            }
+            .theme_btn{
+                border: 0;
+                box-shadow: none;
+                outline: none;
+                min-width: 210px; 
+                box-shadow: 0px 15px 60px 0px rgba(41, 41, 41, 0.35);
+                margin-top: 18px;
+                line-height: 58px;
+                font-weight: 500;
+                border-radius: 0;
+            }
+            &.has-error{
+                .form-control{
+                    border-color: red; 
+                }
+            }
+        }
+    }
+}
+/* End Say Hello Area */ 
+
+/* address_area */ 
+.address_area{
+    display: block;
+    overflow: hidden;
+    padding-bottom: 80px;
+    .map_area{
+        padding: 40px 0;
+        #mapBox{
+            display: block;
+            width: 100%;
+            height: 630px;
+        }
+    }
+    .office_address{
+        max-width: 470px; 
+        background-image: -moz-linear-gradient( -114deg, rgb(145,83,254) 0%, rgb(188,132,248) 100%);
+        background-image: -webkit-linear-gradient( -114deg, rgb(145,83,254) 0%, rgb(188,132,248) 100%);
+        background-image: -ms-linear-gradient( -114deg, rgb(145,83,254) 0%, rgb(188,132,248) 100%);
+        padding: 60px 70px 45px;
+        position: relative;
+        margin-left: 100px;
+        &:after{
+            content: "01";
+            position: absolute;
+            right: 53px;
+            top: -40px;
+            font: 600 110px/1 $works; 
+            color: #fff; 
+        }
+        address{
+            font: 400 16px/46px $works;
+            color: #fff;
+            margin: 0;
+            span, a{
+                color: #fff;
+                font-weight: 500;
+                font-size: 18px;
+            } 
+            .heding{
+                font: 600 20px $works;
+                color: #283048;
+                display: block;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .oa_2{ 
+        margin-top: 40px; 
+        background-image: -moz-linear-gradient( 63deg, rgb(145,83,254) 0%, rgb(188,132,248) 100%);
+        background-image: -webkit-linear-gradient( 63deg, rgb(145,83,254) 0%, rgb(188,132,248) 100%);
+        background-image: -ms-linear-gradient( 63deg, rgb(145,83,254) 0%, rgb(188,132,248) 100%);
+        &:after{
+            content: "02";
+        } 
+    } 
+}
+/* End address_area */  
+
+/* leave_reply Area */ 
+.leave_reply{
+    display: block;
+    overflow: hidden; 
+    
+    h2{
+        font: 600 25px/1 $works;
+        color: #537097;
+        padding-top: 40px;
+        padding-bottom: 55px;
+    } 
+    .form-group{
+        margin-bottom: 50px;
+        .form-control{
+            box-shadow: none;
+            outline: none;
+            border-radius: 30px;
+            border: 1px solid #e6f1ff;
+            font: 400 16px/60px $works;
+            color: rgba(83, 112, 151, 0.6);
+            height: auto;
+            padding: 0 30px;
+            resize: none;
+            @include placeholder{
+                color: rgba(83, 112, 151, 0.6);
+            } 
+            &:focus{
+                @include placeholder{
+                    color: #fff;
+                }
+            }
+        } 
+        textarea{
+            height: 210px !important;
+            line-height: 30px !important;
+            padding-top: 30px !important;
+        }
+        .theme_btn{
+            margin: 0; 
+            min-width: 160px; 
+            color: #fff;
+            cursor: pointer;  
+            border: 0;
+            border-radius: 30px;
+            box-shadow: none; 
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+        &.larg_btn{
+            margin: 0;
+        }
+    }
+}
+/* End leave_reply Area */  
+ 

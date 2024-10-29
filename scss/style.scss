@@ -1,0 +1,81 @@
+/* ------------------------------------------------------
+@File: Default Styles
+@Author: Template Mr.
+@Developed By: Emran Khan
+@Developer URL: http://emran-khan.com
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+------------------------------------------------------- */
+
+/* ======================================================
+@Template Name: Mogh 
+@Author: Template Mr. 
+@Default Styles
+
+Table of Content: 
+01/ Variables
+02/ Prefix
+03/ Header
+04/ Banner
+05/ Team
+06/ Animat
+07/ Services
+08/ Agency
+09/ Testimonial
+10/ Feature
+11/ Pricing
+12/ Blog
+13/ Portfolio
+14/ Footer 
+15/ Responsive   
+
+===================================================== */ 
+
+/*----------------------------------------------------*/
+@import "variables";
+/*----------------------------------------------------*/  
+@import "prefix";
+/*----------------------------------------------------*/ 
+@import "animat";
+/*----------------------------------------------------*/ 
+@import "header";
+/*----------------------------------------------------*/
+@import "banner";
+/*----------------------------------------------------*/
+@import "team";
+/*----------------------------------------------------*/ 
+@import "services";
+/*----------------------------------------------------*/  
+@import "agency";
+/*----------------------------------------------------*/  
+@import "testimonial";
+/*----------------------------------------------------*/  
+@import "feature";
+/*----------------------------------------------------*/ 
+@import "pricing";
+/*----------------------------------------------------*/ 
+@import "blog";
+/*----------------------------------------------------*/  
+@import "portfolio";
+/*----------------------------------------------------*/  
+@import "from"; 
+/*----------------------------------------------------*/   
+@import "footer";
+/*----------------------------------------------------*/ 
+@import "responsive";
+/*----------------------------------------------------*/     
+
+/*All CSS call*/
+@import "../css/bootstrap.min.css"; /* Bootstrap CSS */
+/* Icon CSS */
+@import "../css/font-awesome.min.css";   
+@import "../vendors/flat-icon/flaticon.css"; 
+/* Extra Plugins CSS */ 
+@import "../vendors/animate-css/animate.css"; 
+@import "../vendors/magnify-popup/magnific-popup.css"; 
+@import "../vendors/lightbox/simpleLightbox.css";    
+@import "../vendors/bootstrap-selector/nice-select.css";    
+/* Font family link */
+@import url('https://fonts.googleapis.com/css?family=Muli:400,600,700|Work+Sans:400,500,600,700|Dancing+Script:400,700');

@@ -1,0 +1,202 @@
+/* Email_us */
+.email_us{ 
+    margin: 0 70px 205px;
+    padding: 70px 80px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 18px 34px 0px rgba(160, 160, 160, 0.35);
+    border-radius: 10px;
+    .input-group{ 
+        border-radius: 10px;
+        border: 1px solid rgb(241, 241, 241);
+        @include transition;
+        &:hover, &:focus{  
+            border-color: $bc; 
+        }
+        .form-control{
+            border-radius: 10px;
+            box-shadow: none;
+            outline: none;
+            padding: 0 45px;
+            font: 400 16px/80px $works;
+            color: #c9c9c9;
+            height: auto;
+            border: 0;
+            @include placeholder{
+                color: #c9c9c9;
+            }
+            &:focus{ 
+                border-color: $bc;
+                @include placeholder{
+                    color: transparent;
+                }
+            }
+        }
+        .input-group-text{
+            font: 400 20px/80px $works;
+            box-shadow: none;
+            outline: none;
+            color: #fffefe;
+            min-width: 307px;
+            background: $bc;
+            text-align: center;
+            display: block;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+            border-radius: 10px !important;
+            &:hover, &:focus{
+                background: $hover;
+                color: #fff;
+            }
+        }
+    } 
+} 
+
+/* Email_us */
+
+/* Footer Home pages */
+.footer_area{ 
+    display: block;
+    overflow: hidden; 
+    // background: url("../images/footer.png") no-repeat right bottom;
+    background-size: contain;
+    padding-top: 210px;
+    margin-top: -40px;
+    position: relative;
+    .layer_1{
+        position: absolute !important;
+        top: 20px !important;
+        left: 50px !important;
+    } 
+    .layer_2{
+        position: absolute !important;
+        top: 170px !important;
+        right: 150px !important;
+        left: auto !important;
+    }
+    .footer_inner{ 
+        padding-bottom:30px;    
+        .footer_logo{
+            margin-bottom: 30px;
+            img{
+                max-width: 100%;
+            }
+            p{
+                font: 400 18px/36px $works;
+                color: #4b4b4c;
+                padding: 33px 0 45px;
+            }
+            h6{
+                font: 400 18px/36px $works;
+                color: #4b4b4c;
+                i{
+                    padding-right: 20px;
+                    color: #a0afff;
+                    font-size: 20px;
+                }
+            }
+            
+            .footer_social{
+                padding-top: 30px;
+                li{
+                    display: inline-block; 
+                    padding-right: 7px;
+                    padding-bottom: 10px;
+                    a{
+                        width: 45px;
+                        line-height: 45px;
+                        display: inline-block;
+                        color: #fff;
+                        font-size: 18px;
+                        text-align: center;
+                        border-radius: 50%;
+                        background: #c0cafc; 
+                        &:hover, &:focus{
+                            background: $hover;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_widget{
+            padding: 0;
+            padding-left: 100px;
+            h4{
+                font: 600 20px/1 $works;
+                color: #4b4b4c;
+                padding-bottom: 45px;
+                margin-top: -5px; 
+                text-transform: uppercase;
+            } 
+            .footer_nav{
+                li{
+                    &:first-child{
+                        margin-top: -5px;
+                    }
+                    a{
+                        font: 400 18px/42px $works;
+                        color: #4b4b4c;
+                        &:hover, &:focus{
+                            color: $hover; 
+                        }
+                    }
+                }
+            }
+            address{ 
+                font: 400 18px/36px $works;
+                color: #4b4b4c;
+                a{
+                    color: #4b4b4c;
+                    display: block;
+                    &:hover, &:focus{
+                        color: $hover; 
+                    }
+                }
+                .mail{
+                    padding-top: 20px;
+                }
+            }
+        } 
+        .fw_2{
+            padding-left: 35px;
+        }
+        .fw_3{
+            padding-left: 50px;
+        }
+    }
+    
+    .copy_right{  
+        display: block;
+        overflow: hidden;
+        text-align: center;
+        padding: 24px 0;
+        p{
+            font: 400 16px/32px $muli;
+            color: #4b4b4c;
+            a{  
+                color: #4b4b4c;
+                &:hover, &:focus{
+                    color: $hover;
+                }
+            }
+        } 
+    }
+}
+/* End Footer Home pages */
+.scroll-top{
+    position: fixed;
+    right: 30px;
+    bottom: 15px; 
+    height: 50px;
+    width: 50px; 
+    cursor: pointer;
+    background: $bc;
+    border: 0;
+    box-shadow: none;
+    z-index: 999;
+    color: #fff;
+    &:hover, &:focus{
+        background: #ce8506;
+    }  
+}

@@ -1,0 +1,94 @@
+/* Testimonial Area */
+.testimonial_area{
+    display: block;
+    overflow: hidden;
+    padding: 120px 0 100px;
+    background: url("../images/testimonial-bg.png") no-repeat left top;
+    position: relative;
+    .layer_1{
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
+    .layer_2{ 
+        top: 160px !important;
+        left: 150px !important;
+    }
+    .layer_3{ 
+        top: 350px !important;
+        left: 20px !important;
+    }
+    .layer_4{ 
+        top: auto !important;
+        left: 200px !important;
+        bottom: 210px !important;
+    }
+    .layer_5{ 
+        top: auto !important;
+        left: 50px !important;
+        bottom: 50px !important;
+    }
+    .slide_indicators{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li{
+            cursor: pointer;
+        }
+    }
+    .testimonial_slide{
+        .carousel-inner{
+            
+        }
+        .testimonial_img{
+            
+        }
+        .testimonial_text{
+            padding-left: 50px;
+            h2{
+                font: 600 45px/1 $works;
+                color: #242425;
+                padding-bottom: 30px;
+            }
+            h6{
+                font: 400 22px/1 $works;
+                color: #ff8d68;
+            }
+            p{ 
+                font: 400 19px/38px $muli; 
+                padding: 63px 0 55px;
+                padding-right: 20px;
+            }
+            
+            h4{
+                font: 400 22px/1 $works;
+                color: #242425;
+                padding-bottom: 15px;
+            }
+            .slide_control{ 
+                border-radius: 20px;
+                line-height: 60px;
+                min-width: 128px;  
+                display: inline-block;
+                color: #ff8d68;
+                padding: 0;
+                text-align: center;
+                margin-top: 110px;
+                &:hover, &:focus, &.active{
+                    color: #fff;
+                    background-color: rgb(139, 78, 255);
+                    box-shadow: 0px 16px 20px 0px rgba(165, 164, 164, 0.35);
+                }
+                i{ 
+                    &:before{
+                        font-size: 65px;
+                        line-height: 60px;
+                        display: block; 
+                    }
+                }
+            }
+        }
+    }
+}
+/* Testimonial Area */ 
+

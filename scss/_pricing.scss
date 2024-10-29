@@ -1,0 +1,218 @@
+/* Pricing_area */
+.pricing_area{
+    padding-top: 180px;
+    padding-bottom: 100px;
+    .tittle{
+        margin-bottom: 75px;
+        &:after{
+            content: "Our Plan";
+        }
+    }
+    .pricing_content{
+        padding-top: 25px;
+        h2{
+            font: 600 45px/62px $works;
+            color: #242425;
+        }
+        p{
+            font: 400 22px/38px $works;
+            padding: 45px 0 60px;
+        }
+        .theme_btn{
+            background: #f2f9ff;
+            text-transform: capitalize;
+            font: 400 22px/64px $works;
+            min-width: 170px;
+            color: #616162;
+            margin-right: 7px;
+            box-shadow: 0px 16px 30px 0px rgba(181, 179, 185, 0.35);
+            &:hover, &:focus{
+                background: #c0cafc; 
+                color: #fff;
+            }
+        }
+        .pricing_button{
+            margin: 0;
+            padding: 0;
+            li{
+                display: inline-block;
+                 &.active a{
+                    background: #c0cafc; 
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .pricing_slide{
+        .carousel-inner{
+            padding-bottom: 70px; 
+        }
+    }
+    .pricing_plan{
+        float: right;
+        max-width: 438px;
+        background: #fdfdfd;
+        box-shadow: 0px 16px 30px 0px rgba(181, 179, 185, 0.35); 
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 85px;
+        position: relative; 
+        margin-right: 20px;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: 20px;
+            right: 15px;
+            display: block;
+            height: 100%;
+            z-index: -1;
+            background: #e8eff5;
+            box-shadow: 0px 16px 30px 0px rgba(181, 179, 185, 0.35);
+        }
+        .pricing{ 
+            padding: 40px 50px;
+            h3{ 
+                font: 500 44px/1 $works;
+                color: #8c4eff;
+                small{
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #242425;
+                }
+            }
+            h6{
+                font: 400 18px/1 $works;
+                color: #242425;
+                padding-top: 25px;
+            }
+            p{
+                font: 400 16px/32px $works;
+                padding-top: 35px;
+            }
+        }
+        .plus{ 
+            background: #c0cafc;
+            width: 135px; 
+            position: relative; 
+            &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 45px;
+                height: 3px;
+                background: #fff;
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 45px;
+                width: 3px;
+                background: #fff;
+            }
+        }
+    }
+} 
+.pa_2{
+    padding-top: 0px;
+}
+.pa_3{
+    padding-top: 130px;
+}
+.pa_4{
+    background: url("../images/pricing_plan.png") no-repeat top left;
+    padding-top: 370px;
+}
+/* Pricing_area */
+
+/* pricing_plan_area */
+.pricing_plan_area{
+    display: block;
+    overflow: hidden;
+    padding-bottom: 100px;
+    padding-top: 45px;
+    position: relative;
+    .layer_1{
+        position: absolute !important;
+        left: 130px !important;
+        top: auto !important;
+        bottom: 0;
+    }
+    .pricing_plan{
+        background-color: rgb(234, 240, 247);
+        padding: 60px 65px;
+        padding-right: 30px;
+        position: relative;
+        z-index: 1;
+        margin-top: 30px;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 45px;
+            left: 25px;
+            background: url("../images/plan-1.png") no-repeat;
+            height: 100%;
+            width: 100%;
+            display: block;
+            z-index: -1;
+        }
+        h4{
+            font: 600 26px/1 $works;
+            color: #242425; 
+        }
+        h6{
+            font: 500 18px/1 $works;
+            color: rgba(36, 36, 37, 0.702);
+            padding-top: 20px;
+        }
+        ul{
+            padding-top: 45px;
+            padding-bottom: 40px;
+            li{
+                font: 400 16px/38px $works;
+                color: #242425;
+            }
+        }
+        .theme_btn{
+            background: #fff;
+            font-weight: 500;
+            color: #d1b9fe;
+            line-height: 52px;
+            min-width: 201px;
+            text-transform: capitalize;
+            &:hover, &:focus, &.active{
+                background: #c0cafc;
+                color: #fff;
+            }
+        }
+    }
+    .pl_2{ 
+        box-shadow: 0px 0px 34px 0px rgba(167, 120, 255, 0.35);
+        &:after{
+            background: url("../images/plan-2.png") no-repeat;
+        }
+        .theme_btn{ 
+            background: #c0cafc;
+            color: #fff;
+        }
+    }
+    .pl_3{  
+        &:after{
+            background: url("../images/plan-3.png") no-repeat;
+        } 
+    }
+}
+/* pricing_plan_area */
+ 
+ 
+
+ 

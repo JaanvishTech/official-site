@@ -1,0 +1,73 @@
+/*font Variables*/  
+$muli: 'Muli', sans-serif;
+$works: 'Work Sans', sans-serif; 
+$danc: 'Dancing Script', cursive;
+
+/*Color Variables*/ 
+$bc: #8c4eff;
+$hover: #b76dfe; 
+$heding: #282828; 
+$pfont: rgba(36, 36, 37, 0.702);
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+/* Button Style */
+.theme_btn{ 
+    color: #fff; 
+    background: $bc;
+    text-align: center !important; 
+    font: 600 18px/55px $muli;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0 20px; 
+    min-width: 222px;
+    z-index: 1;  
+    &:hover, &:focus, &.active{  
+        background: $hover; 
+        color: #fff;
+    }
+}
+/* Tittle */ 
+.tittle{
+    font: 600  45px/62px $works;
+    color: $heding;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    &:after{
+        content: "";
+        font: 700  100px/1 $danc;
+        color: #f2f9ff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+/* Preloader */ 
+.preloader{
+    position:fixed;
+    left:0px; 
+    top:0px;
+    width:100%;
+    height:100%;
+    z-index:999999;
+    background-color:#ffffff;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-image:url("../images/preloader.svg");
+}

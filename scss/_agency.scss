@@ -1,0 +1,39 @@
+/* Dest_agency_area */
+.best_agency_area{
+    background: url("../images/agency-bg.png") no-repeat top right;
+    .agency_text{ 
+        padding-top: 130px;
+        h2{
+            font: 600  45px/62px $works;
+            color: $heding;
+            position: relative; 
+            z-index: 1; 
+            margin-bottom: 20px;
+            &:after{
+                content: "About Agency";
+                font: 700  100px/1 $danc;
+                color: #f2f9ff;
+                position: absolute;
+                left: -40px; 
+                text-align: center;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+        p{
+            font: 400 22px/38px $works;
+            color: $pfont;
+            max-width: 585px;
+            padding-top: 50px;
+        }
+        a{
+            letter-spacing: 2px;
+            margin-top: 90px;
+        }
+    }
+    .agency_img{
+        padding-top: 55px;
+        padding-left: 0;
+    }
+}
+/* End best_agency_area */
